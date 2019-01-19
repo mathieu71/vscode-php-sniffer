@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - node
+php:
+  - '7.1'
+cache: npm
+before_script:
+  - npm install
+  - cd src/test && composer install
+script: npm test
